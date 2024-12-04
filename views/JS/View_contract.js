@@ -3,9 +3,9 @@ function contractProviderProfile(){
     window.open("http://localhost/ict_jobseeker_44/Contracts/Contract_provider_profile","_self");
 }
 
-function BidContract(){
+function BidContract(Contract_ID){
     
-    window.open("http://localhost/ict_jobseeker_44/Jobseeker/BidContract","_self");
+    window.open("http://localhost/ict_jobseeker_44/Bid/Bid_to_contract/"+Contract_ID,"_self");
    // window.open("http://localhost/ict_jobseeker_44/Contracts/View_contract/select_query_bid_contract_data","_self");
 
 

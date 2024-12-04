@@ -136,15 +136,15 @@
 <div class="counting-part">
     <div class="posted-jobs">
         <div class="posted-jobs-heading">Posted&nbsp;jobs</div>
-        <div class="posted-jobs-value">1250</div>
+        <div class="posted-jobs-value" id="job-count"></div>
     </div>
     <div class="companies">
-        <div class="companies-heading">Companies</div>
-        <div class="companies-value">55</div>
+        <div class="companies-heading" >Companies</div>
+        <div class="companies-value" id="jobseeker-count" ></div>
     </div>
     <div class="jobseekers">
         <div class="jobseekers-heading">Jobseekers</div>
-        <div class="jobseekers-value">28560</div>
+        <div class="jobseekers-value"id="company-count"></div>
     </div>
 </div>
 <!-- counting part ends here -->

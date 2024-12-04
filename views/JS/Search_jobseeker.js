@@ -22,7 +22,7 @@ function load_jobseeker(Job_ID){
                   
                         jobseeker.innerHTML += ` 
     <div class="jobseeker_row">
-        <a href="<?php echo URL ?>Jobseeker/JobSeekerprofile" class="ResourceRow" type = " button" >
+        <a href="http://localhost/ict_jobseeker_44/Jobseeker/JobSeekerProfile?User=${s.Jobseeker_ID}" class="ResourceRow" type = " button" >
           <div class="Academy">
          
               <div class="Tutorial">

@@ -179,8 +179,13 @@ class Database extends PDO
         case 'Jobseeker':
 
             $query = "INSERT INTO jobseeker(User_ID) VALUES (?)";
+
             $stmt2 = $this->prepare($query);
             $stmt2->execute([$User_ID]);
+
+            $query_resume = "INSERT INTO resume(Jobseeker_ID) VALUES (?)";
+            $statement = $this->prepare($query_resume);
+            $statement->execute([$User_ID]);
             break;
         
        case 'Contract provider':

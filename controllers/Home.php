@@ -211,4 +211,13 @@ class Home extends Controller
 
 
   }
+
+
+  //    get the total user
+  function get_counts()
+  {
+      $results = $this->model->get_counts_m();
+      echo json_encode($results);
+
+  }
 }

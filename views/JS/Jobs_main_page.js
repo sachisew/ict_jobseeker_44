@@ -335,11 +335,7 @@ if(query != '' ){
                      features_job1.innerHTML += ` 
                       
                      <div class="features_job_row" onclick="jobView( ${s.Job_ID})">
-                     <div class="features_job_row_picture">
-                         <img src='<?php echo URL ?>views/images/Jobs_main_page/3.JFIF'>
-            
-            
-                     </div>
+                     
                      <div class="features_job_row_job_and_company">
                          <div class="features_job_row_job">
                          ${s.Job_title}

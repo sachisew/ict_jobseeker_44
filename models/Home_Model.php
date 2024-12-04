@@ -147,6 +147,38 @@ public function getJobCategory(){
     $s=$this->db->runQuery($query1);   
     return $s;
 }
+
+
+//counts for admin dashboard
+function get_counts_m()
+{
+    $results = array();
+
+//        jobseeker
+    $sqlJobseeker = "SELECT User_ID from `user` WHERE User_Type = 'Jobseeker';";
+    $statement = $this->db->prepare($sqlJobseeker);
+    $statement->execute();
+    $results['jobseekers'] = $statement->rowCount();
+
+//        Jobs
+    $sqlJob = "SELECT Job_ID from `job`;";
+    $statement = $this->db->prepare($sqlJob);
+    $statement->execute();
+    $results['jobs'] = $statement->rowCount();
+
+//        Companies
+    $sqlCompany = "SELECT User_ID from `user` WHERE User_Type = 'Company';";
+    $statement = $this->db->prepare($sqlCompany);
+    $statement->execute();
+    $results['companies'] = $statement->rowCount();
+
+
+
+    return $results;
+
+
+}
+
     
 }
 

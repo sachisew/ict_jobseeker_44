@@ -26,7 +26,7 @@
                     <?php echo $data['First_name']." ".$data['Last_name']?> 
                 </div>
                 <div class="Post">
-                    Software Engineer
+                    <!-- Software Engineer -->
                 </div>
             </div>
             <?php  ?>
@@ -42,11 +42,11 @@
                     <?php echo $data['Phone_number'] ?>
                 </div>
                 <div class="Projects">
-                    10 Projects
+                    <!-- 10 Projects -->
                 </div>
                 <div class="Rating">
                     <i class="fa fa-star-o" aria-hidden="false"></i>
-                    <div class="NoOfRating">4.2<?php echo $data['Phone_number']?></div>
+                    <div class="NoOfRating">4.2<?php #echo $data['Phone_number']?></div>
                 </div>
             </div>
             <div class="SocialLinks">
@@ -89,8 +89,7 @@
             <div class="JobSeekerDetails">
                 <p id="titles">About Me</p>
                 <div class="row">
-                   Software engineer with through hands on experience in all levels of testing 
-                   including performance, functional integration, system and user acceptance testing.
+                  
                    
                    <?php echo $data['Description']?>
                 </div>  
@@ -139,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <p id="titles">Reviews</p>
+        <!-- <p id="titles">Reviews</p>
         <div class="review">
            
             <hr>
@@ -191,7 +190,7 @@
                        Thanks for your dedication.
                      </div>
 
-               </div>
+               </div> -->
                  
             </div>
             <hr>

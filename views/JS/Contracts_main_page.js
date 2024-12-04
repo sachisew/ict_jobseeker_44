@@ -10,7 +10,7 @@ function Bidnow(){
     }
     /*after click on the category box*/
     function viewContract(data){
-    
+  
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "http://localhost/ict_jobseeker_44/Contracts/View_contract/view_clicked_contract2/"+data);
       
@@ -49,7 +49,7 @@ function Bidnow(){
    
                </div>
               
-               <button onclick="BidContract()">Bid Now</button>
+               <button onclick="BidContract(${data})">Bid Now</button>
    
            </div>
            <div class="job_description_title">

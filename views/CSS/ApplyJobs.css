@@ -189,6 +189,11 @@ span
 {
     color: red;
 }
+p{
+    text-align: center;
+    color: red;
+    font-weight: 450px;
+}
 /*user access msg end*/
 @media only screen and (max-width: 990px)
 {

@@ -209,3 +209,21 @@ function ajaxload(query = '', page_number = 1) {
             }
             xhr.send(urlparam);
         }
+
+
+function get_counts() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/ict_jobseeker_44/Home/get_counts");
+            xhr.onload = function () {
+                const categoryData = JSON.parse(this.responseText);
+                // console.log(categoryData);
+        
+                document.getElementById("jobseeker-count").innerHTML = categoryData.jobseekers;
+                document.getElementById("job-count").innerHTML = categoryData.jobs;
+                document.getElementById("company-count").innerHTML = categoryData.companies;
+               
+        
+            }
+            xhr.send();
+ }
+ get_counts();    

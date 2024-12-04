@@ -14,12 +14,7 @@
     
     <!-- main container -->
     <div class="main-conatainer">
-        <!-- divisoin for admin home -->
-        <a href="<?php echo URL ?>Admin/Admin_home">
-            <div class="admin-home-button">
-                <button>Admin Home</button>
-            </div>
-        </a>
+       
         <!-- search part -->
         <div class="search-lms">
             <input type="text" name="search-lms" id="search-lms" placeholder="Search Learning Materials" onkeyup="ajaxload(this.value);">
@@ -72,9 +67,7 @@
             <a href="<?php echo URL ?>Admin/Manage_contracts">
                 <div class="manage_contracts box">Manage Contracts</div>
             </a>
-            <a href="<?php echo URL ?>Admin/Manage_resume">
-                <div class="manage_resume box">Manage Resume</div>
-            </a>
+         
 
             <a href="<?php echo URL ?>Admin/Manage_cp">
                 <div class="manage_contract_providers box">
@@ -125,12 +118,10 @@
 
         <!-- add counsellors -->
         <div class="add-counsellors">
-            <button id = "add-button"><span class="plus">+</span>Add Counsellors</button>
+            <button id = "add-button"><span class="plus">+</span>Add Learning Materials</button>
         </div>
 
-        <div id="total-data">
-
-        </div>
+       
 
         <!-- table
         <div class="table-lms">

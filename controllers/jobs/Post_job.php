@@ -9,7 +9,8 @@ class Post_job extends Controller
     }
 
     function Post_job()
-    {//when post a job flag=0 and when edit flag =1
+    {error_reporting(0);
+        //when post a job flag=0 and when edit flag =1
         $data = [
             'flag'=>'0',
             'Company_name' => '',

@@ -17,14 +17,15 @@
      <!-- check user loging  -->
 
      <?php if ( isset($_SESSION['User_ID']) && $_SESSION['User_type']=="Jobseeker" ): ?>
-    <div class="CompanyBanner">
+    <!-- <div class="CompanyBanner">
         <div class="CompanyLogo" style="background-image:url('http://localhost/ict_jobseeker_44/views/images/Jobseeker/4.png');">
         </div>
         <div class="JobDetails">
             <p>Senior Software Engineer(C++)</p>
             <p>Virtusa Pvt Limited, 752 Dr Danister De Silva Mawatha, Colombo 00900</p>
         </div>       
-    </div>
+    </div> -->
+    <p>Please update your profile. Companies can view your profile after applying for a job</p>
     <form class="main_container" method="POST" name="myForm" action="<?php echo URL ?>Jobseeker/ApplyJobs/insertJobData/<?php echo $data['Job_ID'] ?>">
         <p id="titles">Personal Details</p>
         <div class="row">
@@ -80,10 +81,10 @@
         </div> -->
         <p id="titles">Resume</p>
         <div class="Resume">
-            <div class="attach">
+            <!-- <div class="attach">
                 <p id="resume">Already Created A Resume?</p><br>
                 <a href="#" id="attach1">Attach Your Resume</a>
-            </div>
+            </div> -->
             <div class="create">
                 <p id="create">Dont Have A Resume?</p><br>
                 <a href="#" id="attach2">Create Your Resume Now</a>

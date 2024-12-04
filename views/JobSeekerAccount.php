@@ -23,15 +23,7 @@
     </div>
 
     <form name="profileForm" action="<?php echo URL ?>Jobseeker/JobSeekerAccount/insertProfile" method="post" id="profile_form" enctype="multipart/form-data">
-    <div class="ProfileBar">
-         <img src='<?php echo URL ?>views/images/JobSeekerAccount/user.png' id="output">
-         <div class="row1">
-         <!-- <img src='<?php echo URL ?>views/images/JobSeekerAccount/user.png' id="output"> -->
-            <label for="profile_pic" class="labelfield">Profile picture</label><br>
-            <input type="file" id="profile_pic" name="profile_pic" class="inputfield" accept="image/*" onchange="loadFile(event)" ><br>
-            <label for="profile_pic" class="labelfield" id="ProfilePicBtnUpload">Choose a photo</label><br>
-        </div>
-    </div>
+    
     </form>
 
     <form name="myForm" action="<?php echo URL ?>Jobseeker/JobSeekerAccount/update_jobseeker_data" method="post" id="jobseeker_form" enctype="multipart/form-data">
@@ -120,14 +112,11 @@
         </div> 
         <p id="titles">Resume</p>
         <div class="Resume">
-            <div class="attach">
-                <p id="resume">Already Created A Resume?</p><br>
-                <a href="#" id="attach1">Attach Your Resume</a>
-            </div>
+            
             <div class="create">
                 <p id="create">Dont Have A Resume?</p><br>
                 <a href="#" id="attach2">Create Your Resume Now</a>
-            </div>F
+            </div>
         </div>
         <div class="flex-container">
             <div class="cancel">

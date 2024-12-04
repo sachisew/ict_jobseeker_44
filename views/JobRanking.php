@@ -28,11 +28,11 @@
             </div>
             <!-- theme image ends here -->
             
-            <div class="jobcategory-search-box">
+            <!-- <div class="jobcategory-search-box">
                 <div class="search-your-keywords">
                     <input type="text" name="JobcategoryName" placeholder="Search Job Categories" onkeyup="ajaxload(this.value);">
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <!-- search part ends here -->

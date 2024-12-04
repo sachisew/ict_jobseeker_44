@@ -16,6 +16,18 @@ class Bid extends Controller
         //pass view name
         $this->view ->render('Bid'); 
     }
+    
+    //when biding call to this controller and render contract bid form with contract id
+    function Bid_to_contract($contract_ID)
+    {
+       
+        //pass view name
+        $this->view ->render3('Bid',$contract_ID); 
+    }
+
+
+
+
     // function insert_bid()
     // {
     //     if(isset($_POST['submit']))  
@@ -28,23 +40,30 @@ class Bid extends Controller
         
     // }
     //insert bidr data into database (user and dobid table)
-    function insert_bid()
+    function insert_bid($contract_ID)
     {
-       
+       $data=[
+           'contract_ID'=>$contract_ID,
+           'bid'=>$_POST["bid"],
+           'proposal'=>$_POST["proposal"],
 
-        //pass view name
+       ];
        
-        $this->view->Bid= $this->model->run_insert_bid();
+    
+         $this->model->run_insert_bid($data);
         
         // $this->view ->render('View_contract'); 
 
 
-        $data = [];
-        $result = $this->model->select_data_table();
-        $data['result'] = $result;
+       // $data = [];
+       // $result = $this->model->select_data_table();
+        //$data['result'] = $result;
     //   print_r($result);
 
-        $this->view->render2('BidContract2', $data);
+       // $this->view->render2('BidContract2', $data);
         
     }
+
+
+
 }

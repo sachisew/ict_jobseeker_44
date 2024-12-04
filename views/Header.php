@@ -461,11 +461,16 @@ align-items: center;
           <!-- logo and navigation bar starts here -->
           <div class="navigation-header">
             <div class="logo">
+<div class="logo">
 
               <?php
               echo "<img src='http://localhost/ict_jobseeker_44/views/images/Home/logo_old.jpg' >";
-              ?>
+              ?> 
             </div>
+            <!-- <div id = "logo-name">ICT Jobseeker</div> -->
+            </div>
+            
+            
             <!-- logo ends here -->
 
             <!-- navigation menu starts here -->

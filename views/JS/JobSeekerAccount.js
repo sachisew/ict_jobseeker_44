@@ -1,8 +1,8 @@
-// alert("Welcome")
+alert("Welcome")
 function validateForm() {
     var fname=document.myForm.fname.value;  
    
-   console.log(fname) 
+  //  console.log(fname) 
     var brief_intro
     /*validate first name*/
     if (fname == "") {
@@ -177,25 +177,25 @@ function validateForm() {
     };
 
   // declaring html elements 
-  const profileDiv=document.querySelector('.row1');
-  const profilePicImg=document.querySelector('#output');
-  const profilePicFile=document.querySelector('#profile_pic');
-  const profileBtnUpload=document.querySelector('#ProfilePicBtnUpload');
+  // const profileDiv=document.querySelector('.row1');
+  // const profilePicImg=document.querySelector('#output');
+  // const profilePicFile=document.querySelector('#profile_pic');
+  // const profileBtnUpload=document.querySelector('#ProfilePicBtnUpload');
 
 
-  profilePicFile.addEventListener('change',function()
-  {
-    const choosedprofilePicFile=this.files[0];
+  // profilePicFile.addEventListener('change',function()
+  // {
+  //   const choosedprofilePicFile=this.files[0];
 
-    if(choosedprofilePicFile)
-    {
-        const ProfReader=new FileReader();
-        ProfReader.addEventListener('load',function()
-        {
-          profilePicImg.setAttribute('src',ProfReader.result);
-        }
-        );
-        ProfReader.readAsDataURL(choosedprofilePicFile);
-    }
-  }
-  );
+  //   if(choosedprofilePicFile)
+  //   {
+  //       const ProfReader=new FileReader();
+  //       ProfReader.addEventListener('load',function()
+  //       {
+  //         profilePicImg.setAttribute('src',ProfReader.result);
+  //       }
+  //       );
+  //       ProfReader.readAsDataURL(choosedprofilePicFile);
+  //   }
+  // }
+  // );

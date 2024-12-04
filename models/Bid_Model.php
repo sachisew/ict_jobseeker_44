@@ -6,24 +6,25 @@ class Bid_Model extends Model{
        parent :: __construct(); 
     }
 
-    function run_insert_bid()
+    function run_insert_bid($data)
    {
-        // try
-        // {
-        //   $Jobseeker_ID=$_SESSION['User_ID'];
-        //   $sql= "INSERT INTO dobid (Bid_value,Bid_proposal,Jobseeker_ID) VALUES (?,?,?) ";
-            
-        //     $stmt=$this->db->prepare($sql);
-        //     $stmt->execute([$Bid_value,$Bid_proposal,$Jobseeker_ID]);
+      $contract_ID=$data['contract_ID'];
+      $bid=$data['bid'];
+      $proposal=$data['proposal'];
+      $jobseeker_ID=$_SESSION['User_ID'];
 
-        //   echo "Successfully inserted"  ;
-        // }
-        // catch(Exception $e)
-        // {
-        //     echo "message $e->getMessage()";
-        // }
-        return $this->db->run_insert_bid_query();
+      //query for get contract provider id of relevent contract
+      $query1="SELECT Contract_provider_ID FROM contract WHERE Contract_ID=$contract_ID";
+      $stmt1=$this->db->prepare($query1);   
+      $stmt1->execute();
+      $contractprovider_ID=$stmt1->fetch();
 
+      $query2="INSERT INTO dobid (Bid_value ,Bid_proposal,Jobseeker_ID,Contract_provider_ID,Contract_ID )
+      VALUES (?,?,?,?,?)";
+      $stmt2=$this->db->prepare($query2);   
+      $stmt2->execute([$bid,$proposal,$jobseeker_ID,$contractprovider_ID, $contract_ID]);
+      
+   
    }
    function select_data_table()
    {

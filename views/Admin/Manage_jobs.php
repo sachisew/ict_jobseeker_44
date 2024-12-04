@@ -54,9 +54,7 @@
             <a href="<?php echo URL ?>Admin/Manage_contracts">
                 <div class="manage_contracts box">Manage Contracts</div>
             </a>
-            <a href="<?php echo URL ?>Admin/Manage_resume">
-                <div class="manage_resume box">Manage Resume</div>
-            </a>
+            
 
             <a href="<?php echo URL ?>Admin/Manage_cp">
                 <div class="manage_contract_providers box">
@@ -110,9 +108,7 @@
             <button id = "add-button"><span class="plus">+</span>Add jobs</button>
         </div>
 
-        <div id="total-data">
-
-        </div>
+        
 
         <!-- table -->
         <div class="Table" id="job_table">

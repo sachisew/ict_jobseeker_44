@@ -30,14 +30,14 @@
           
         </div>
         <!-- theme image ends here -->
-       <div class="resource-search-box">
+       <!-- <div class="resource-search-box">
           <div class="search-your-keywords">
             <input
               type="text"
               name="Search your keyword"
               placeholder="Jobseeker name/Qulification"
             />
-          </div>
+          </div> -->
          <!--  <div class="category">
             <select name="Category">
               <option value="none" selected disabled hidden>

@@ -11,13 +11,14 @@
     </style>
 </head>
 <body>
+<?php include 'Header.php'?>
 <?php if ( isset($_SESSION['User_ID']) && $_SESSION['User_type']=="Jobseeker" ): ?>
-    <form class="MainContainer" name="myForm" action="<?php echo URL ?>Bid/insert_bid" method="post">
+    <form class="MainContainer" name="myForm" action="<?php echo URL ?>Bid/insert_bid/<?php echo $data ?>" method="post">
         <div class="Title">
             Bid on this project
         </div>
         <div class="row" id="description">
-            You will be able to edit your bid until the project is awarded to someone.
+          
         </div>
         <div class="row">
             <label for="bid" class="labelfield">Bid</label><br>
@@ -36,6 +37,9 @@
     <?php if ( !isset($_SESSION['User_ID'])||$_SESSION['User_type']!="Jobseeker") : ?>
         <div class="login_msg"> Before apply for a job you should login as Jobseeker</div>
         <a id="a_tag_login" href="<?php echo URL?>Login"><button class="submit_button"id="login_button">Login</button></a>
-        <?php endif; ?>  
+        <?php endif; ?> 
+        
+        <?php include 'Footer.php'?>
+
 </body>
 </html>

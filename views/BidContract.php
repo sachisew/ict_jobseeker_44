@@ -68,14 +68,13 @@
                 
             </div>
             <div class="job_detail_right">
-                <div class="company_details">
+                   <div class="company_details">
                    <!--
 <div class="mock_interview">
                         We would like to supply mock interviews
                     </div>
                    --> 
-                   <p>
-                    Click here to veiw contract provider details</p> 
+                   <p> Click here to veiw contract provider details</p> 
                    <button id="clickme" onclick="contractProviderProfile()"> Click Here</button>
                 </div>
                 <div class="job_overview">
